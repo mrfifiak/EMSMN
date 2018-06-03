@@ -7,5 +7,13 @@ class TextReader:
         else:
             self.filename = filename
 
+    def read(self):
+        with open(self.filename, 'r') as datafile:
+            self.data = datafile.read().splitlines()
+        for d in self.data:
+            print(d)
+
+
+
 
 

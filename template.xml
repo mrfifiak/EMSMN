@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tv generator-info-name="EMSMN Project XMLTV Generator">
+  <channel id="I10436.labs.zap2it.com">
+    <icon src="file://C:\Perl\site/share/xmltv/icons/KERA.gif" />
+  </channel>
+  <programme start="20080715090000 -0600" stop="20080715100000 -0600" channel="I10759.labs.zap2it.com">
+    <title lang="en">The Price Is Right</title>
+    <desc lang="en">Contestants bid for prizes then compete for fabulous showcases.</desc>
+    <category lang="en">Series</category>
+    <episode-num>123</episode-num>
+  </programme>
+</tv>

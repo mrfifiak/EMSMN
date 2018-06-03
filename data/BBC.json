@@ -1,30 +1,28 @@
-[
-    
-    {
-        "title":"Sherlock",
-        "start":"20180604123000",
-        "stop":"20180604143000",
-        "episode-num":1,
-        "desc":"The story depicts the introduction of Sherlock to John, and them entering a flatshare at Baker Street in London, and then their investigation into a series of deaths, initially believed to be suicides.",
-        "category":"Series"
-    },
-    
-    {
-        "title":"World News",
-        "start":"20180604143000",
-        "stop":"20180604150000",
-        "desc":"World News presented by presenter.",
-        "category":"News"
-    },
-    
-    {
-        "title":"Top Gear",
-        "start":"20180604150000",
-        "stop":"20180604163000",
-        "episode-num":112,
-        "desc":"The crew try to find a perfect camping car.",
-        "category":"Moto"
-    }
-    
-    
-]
+{
+    "id":"BBC",
+    "programmes":[
+        {
+            "title":"Sherlock",
+            "start":"20180604123000",
+            "stop":"20180604143000",
+            "episode-num":1,
+            "desc":"The story depicts the introduction of Sherlock to John, and them entering a flatshare at Baker Street in London, and then their investigation into a series of deaths, initially believed to be suicides.",
+            "category":"Series"
+        },
+        {
+            "title":"World News",
+            "start":"20180604143000",
+            "stop":"20180604150000",
+            "desc":"World News presented by presenter.",
+            "category":"News"
+        },
+        {
+            "title":"Top Gear",
+            "start":"20180604150000",
+            "stop":"20180604163000",
+            "episode-num":112,
+            "desc":"The crew try to find a perfect camping car.",
+            "category":"Moto"
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as et
+import lxml.etree as et
 
 
 class XMLWriter:
@@ -17,9 +17,14 @@ class XMLWriter:
             new_channel = et.SubElement(self.root, "channel", attrib={"id": ch})
             print(new_channel.tag, new_channel.attrib)
 
+    def add_programmes(self, programmes):
+        for ch in programmes:
+            new_channel = et.SubElement(self.root, "programme", attrib={"id": ch})
+            print(new_channel.tag, new_channel.attrib)
+
     def save(self):
         for child in self.root:
             print(child.tag, child.attrib)
-        self.tree.write("output/" + self.output_name)
+        self.tree.write("output/" + self.output_name, pretty_print=True)
 
 

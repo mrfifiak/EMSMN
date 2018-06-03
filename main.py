@@ -13,8 +13,11 @@ programmes = []
 for datafile in reader.channel_list:
     data.append(reader.get_programmes(datafile))
 
+i = 0
 for channel_data in data:
     channels.append(channel_data['id'])
+    for p in channel_data['programmes']:
+        p['channel'] = channel_data['id']
     programmes.append(channel_data['programmes'])
 
 writer.add_channels(channels)

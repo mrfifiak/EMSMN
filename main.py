@@ -4,10 +4,14 @@ from reader import TextReader
 
 
 reader = TextReader()
+data = []
+for datafile in reader.channel_list:
+    data.append(reader.get_programmes(datafile))
 
-data = reader.get_programmes("BBC.json")
 
 print(data)
+print("\nDEBUG\n")
+
 
 base_path = os.path.dirname(os.path.realpath(__file__))
 xml_file = os.path.join(base_path, "template.xml")

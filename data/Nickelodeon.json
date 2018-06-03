@@ -1,29 +1,29 @@
-[
-    {
-        "title":"School of Rock",
-        "start":"20180604100000",
-        "stop":"20180604110000",
-        "episode-num":23,
-        "desc":"Set in Austin, Texas, the series follows a group of rule-abiding students who learn to take risks and reach new heights thanks to substitute teacher Dewey Finn, a down-on-his-luck musician who uses the language of rock and roll to inspire his class to form a secret band.",
-        "category":"Kids"
-    },
-    
-    {
-        "title":"Hannah Montana LIVE",
-        "start":"20180604110000",
-        "stop":"20180604130000",
-        "desc":"Hannah Montana's concert from Carnegie Hall.",
-        "category":"Concert"
-    },
+{
+    "id":"Nickelodeon",
+    "programmes":[
+        {
+            "title":"School of Rock",
+            "start":"20180604100000",
+            "stop":"20180604110000",
+            "episode-num":23,
+            "desc":"Set in Austin, Texas, the series follows a group of rule-abiding students who learn to take risks and reach new heights thanks to substitute teacher Dewey Finn, a down-on-his-luck musician who uses the language of rock and roll to inspire his class to form a secret band.",
+            "category":"Kids"
+        },   
+        {
+            "title":"Hannah Montana LIVE",
+            "start":"20180604110000",
+            "stop":"20180604130000",
+            "desc":"Hannah Montana's concert from Carnegie Hall.",
+            "category":"Concert"
+        },    
+        {
+            "title":"SpongeBob SquarePants",
+            "start":"20180604130000",
+            "stop":"20180604133000",
+            "episode-num":754345,
+            "desc":"SpongeBob SquarePants is an energetic and optimistic sea sponge who physically resembles a rectangular kitchen sponge.",
+            "category":"Moto"
+        }
 
-    {
-        "title":"SpongeBob SquarePants",
-        "start":"20180604130000",
-        "stop":"20180604133000",
-        "episode-num":754345,
-        "desc":"SpongeBob SquarePants is an energetic and optimistic sea sponge who physically resembles a rectangular kitchen sponge.",
-        "category":"Moto"
-    }
-
-
-]
+    ]
+}

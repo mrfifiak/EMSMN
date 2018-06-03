@@ -1,2 +1,38 @@
 <tv generator-info-name="EMSMN Project XMLTV Generator">
-<channel id="Nickelodeon"/><channel id="BBC"/><programme channel="Nickelodeon" start="20180604100000" stop="20180604110000"><title lang="en">School of Rock</title></programme><programme channel="Nickelodeon" start="20180604110000" stop="20180604130000"><title lang="en">Hannah Montana LIVE</title></programme><programme channel="Nickelodeon" start="20180604130000" stop="20180604133000"><title lang="en">SpongeBob SquarePants</title></programme><programme channel="BBC" start="20180604123000" stop="20180604143000"><title lang="en">Sherlock</title></programme><programme channel="BBC" start="20180604143000" stop="20180604150000"><title lang="en">World News</title></programme><programme channel="BBC" start="20180604150000" stop="20180604163000"><title lang="en">Top Gear</title></programme></tv>
+  <channel id="Nickelodeon"/>
+  <channel id="BBC"/>
+  <programme channel="Nickelodeon" start="20180604100000" stop="20180604110000">
+    <title lang="en">School of Rock</title>
+    <desc lang="en">Set in Austin, Texas, the series follows a group of rule-abiding students who learn to take risks and reach new heights thanks to substitute teacher Dewey Finn, a down-on-his-luck musician who uses the language of rock and roll to inspire his class to form a secret band.</desc>
+    <category lang="en">Kids</category>
+    <episode-num>23</episode-num>
+  </programme>
+  <programme channel="Nickelodeon" start="20180604110000" stop="20180604130000">
+    <title lang="en">Hannah Montana LIVE</title>
+    <desc lang="en">Hannah Montana's concert from Carnegie Hall.</desc>
+    <category lang="en">Concert</category>
+  </programme>
+  <programme channel="Nickelodeon" start="20180604130000" stop="20180604133000">
+    <title lang="en">SpongeBob SquarePants</title>
+    <desc lang="en">SpongeBob SquarePants is an energetic and optimistic sea sponge who physically resembles a rectangular kitchen sponge.</desc>
+    <category lang="en">Teens</category>
+    <episode-num>754345</episode-num>
+  </programme>
+  <programme channel="BBC" start="20180604123000" stop="20180604143000">
+    <title lang="en">Sherlock</title>
+    <desc lang="en">The story depicts the introduction of Sherlock to John, and them entering a flatshare at Baker Street in London, and then their investigation into a series of deaths, initially believed to be suicides.</desc>
+    <category lang="en">Series</category>
+    <episode-num>1</episode-num>
+  </programme>
+  <programme channel="BBC" start="20180604143000" stop="20180604150000">
+    <title lang="en">World News</title>
+    <desc lang="en">World News presented by presenter.</desc>
+    <category lang="en">News</category>
+  </programme>
+  <programme channel="BBC" start="20180604150000" stop="20180604163000">
+    <title lang="en">Top Gear</title>
+    <desc lang="en">The crew try to find a perfect camping car.</desc>
+    <category lang="en">Moto</category>
+    <episode-num>112</episode-num>
+  </programme>
+</tv>

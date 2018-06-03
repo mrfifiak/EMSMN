@@ -1,4 +1,4 @@
-import lxml.etree as et
+from lxml import etree as et
 
 
 class XMLWriter:
@@ -8,7 +8,7 @@ class XMLWriter:
         else:
             self.output_name = output_name
         with open("output/" + self.output_name, 'w') as out_file:
-            out_file.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<tv generator-info-name=\"EMSMN Project XMLTV Generator\">\n</tv>")
+            out_file.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?><tv generator-info-name=\"EMSMN Project XMLTV Generator\"></tv>")
         self.tree = et.parse("output/" + self.output_name)
         self.root = self.tree.getroot()
 
@@ -22,6 +22,13 @@ class XMLWriter:
             new_programme = et.SubElement(self.root, "programme", attrib={"start": p['start'], "stop": p['stop'], "channel": p['channel']})
             new_title = et.SubElement(new_programme, "title", attrib={"lang": "en"})
             new_title.text = p['title']
+            new_desc = et.SubElement(new_programme, "desc", attrib={"lang": "en"})
+            new_desc.text = p['desc']
+            new_category = et.SubElement(new_programme, "category", attrib={"lang": "en"})
+            new_category.text = p['category']
+            if 'episode-num' in p.keys():
+                new_ep_num = et.SubElement(new_programme, "episode-num")
+                new_ep_num.text = str(p['episode-num'])
             print(new_programme.tag, new_programme.attrib)
 
     def save(self):

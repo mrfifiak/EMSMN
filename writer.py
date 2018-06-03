@@ -18,9 +18,11 @@ class XMLWriter:
             print(new_channel.tag, new_channel.attrib)
 
     def add_programmes(self, programmes):
-        for ch in programmes:
-            new_channel = et.SubElement(self.root, "programme", attrib={"id": ch})
-            print(new_channel.tag, new_channel.attrib)
+        for p in programmes:
+            new_programme = et.SubElement(self.root, "programme", attrib={"start": p['start'], "stop": p['stop'], "channel": p['channel']})
+            new_title = et.SubElement(new_programme, "title", attrib={"lang": "en"})
+            new_title.text = p['title']
+            print(new_programme.tag, new_programme.attrib)
 
     def save(self):
         for child in self.root:

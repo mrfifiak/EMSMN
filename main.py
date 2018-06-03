@@ -1,9 +1,12 @@
 import xml.etree.ElementTree as et
 import os
 from reader import TextReader
+from writer import XMLWriter
 
 
 reader = TextReader()
+writer = XMLWriter()
+
 data = []
 channels = []
 programmes = []
@@ -14,15 +17,12 @@ for channel_data in data:
     channels.append(channel_data['id'])
     programmes.append(channel_data['programmes'])
 
-
+writer.add_channels(channels)
 print(type(data))
 print("\nDEBUG\n")
 
 
-base_path = os.path.dirname(os.path.realpath(__file__))
-xml_file = os.path.join(base_path, "template.xml")
-
-tree = et.parse(xml_file)
+tree = et.parse("template.xml")
 
 root = tree.getroot()
 
@@ -31,3 +31,5 @@ new_prod_ico = et.SubElement(new_channel, "icon", attrib={"src": "ico.png"})
 
 for child in root:
     print(child.tag, child.attrib)
+print("\nCHECK\n")
+writer.save()

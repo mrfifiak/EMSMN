@@ -5,11 +5,17 @@ from reader import TextReader
 
 reader = TextReader()
 data = []
+channels = []
+programmes = []
 for datafile in reader.channel_list:
     data.append(reader.get_programmes(datafile))
 
+for channel_data in data:
+    channels.append(channel_data['id'])
+    programmes.append(channel_data['programmes'])
 
-print(data)
+
+print(type(data))
 print("\nDEBUG\n")
 
 

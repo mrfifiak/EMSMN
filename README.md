@@ -6,4 +6,4 @@ For the program to work, there must be valid JSON files in 'data' directory. The
 ```
 $ python3 main.py
 ```
-It will generate XMLTV file called epg.xml in 'output' directory.
+It will generate XMLTV file called epg.xml in the directory you're in.

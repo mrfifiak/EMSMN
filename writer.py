@@ -7,9 +7,9 @@ class XMLWriter:
             self.output_name = "epg.xml"
         else:
             self.output_name = output_name
-        with open("output/" + self.output_name, 'w') as out_file:
+        with open(self.output_name, 'w+') as out_file:
             out_file.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?><tv generator-info-name=\"EMSMN Project XMLTV Generator\"></tv>")
-        self.tree = et.parse("output/" + self.output_name)
+        self.tree = et.parse(self.output_name)
         self.root = self.tree.getroot()
 
     def add_channels(self, channels):
@@ -30,6 +30,6 @@ class XMLWriter:
                 new_ep_num.text = str(p['episode-num'])
 
     def save(self):
-        self.tree.write("output/" + self.output_name, pretty_print=True)
+        self.tree.write(self.output_name, pretty_print=True)
 
 

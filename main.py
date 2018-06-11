@@ -24,4 +24,4 @@ writer.add_programmes(programmes)
 
 writer.save()
 
-print("Generated epg.xml in directory \"output\" using data from directory \"data\".")
+print("Generated epg.xml using data from directory \"data\".")

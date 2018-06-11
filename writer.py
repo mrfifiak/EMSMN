@@ -15,7 +15,6 @@ class XMLWriter:
     def add_channels(self, channels):
         for ch in channels:
             new_channel = et.SubElement(self.root, "channel", attrib={"id": ch})
-            print(new_channel.tag, new_channel.attrib)
 
     def add_programmes(self, programmes):
         for p in programmes:
@@ -29,11 +28,8 @@ class XMLWriter:
             if 'episode-num' in p.keys():
                 new_ep_num = et.SubElement(new_programme, "episode-num")
                 new_ep_num.text = str(p['episode-num'])
-            print(new_programme.tag, new_programme.attrib)
 
     def save(self):
-        for child in self.root:
-            print(child.tag, child.attrib)
         self.tree.write("output/" + self.output_name, pretty_print=True)
 
 

@@ -20,7 +20,8 @@ for channel_data in data:
 
 writer.add_channels(channels)
 writer.add_programmes(programmes)
-print(type(data))
-print("\nDEBUG\n")
+
 
 writer.save()
+
+print("Generated epg.xml in directory \"output\" using data from directory \"data\".")
